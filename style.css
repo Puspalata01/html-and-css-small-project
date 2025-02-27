@@ -1,0 +1,86 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://i.pinimg.com/736x/45/34/64/453464e3627bf04de8eff32825f33b50.jpg') no-repeat center center/cover;
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #003366, #006699);
+    padding: 20px;
+    font-size: 2.5em;
+    border-bottom: 5px solid #00aaff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.creature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, black, #003366);
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 850px;
+    box-shadow: 0 10px 20px rgba(0, 255, 255, 0.4);
+    border: 3px solid #00aaff;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.creature:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 255, 255, 0.6);
+}
+
+.creature::before {
+    content: '\1F420'; /* Fish emoji */
+    font-size: 2.5em;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: #00aaff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.creature img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    border: 4px solid #00aaff;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.creature video {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    margin-top: 15px;
+    border: 4px solid #00aaff;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.info {
+    margin-top: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, black, #003366);
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 255, 255, 0.3);
+}
+
+h2 {
+    color: #00ccff;
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.7);
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
